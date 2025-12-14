@@ -1,70 +1,89 @@
 /* 実績の追加は基本ここだけ編集すればOK */
 window.PORTFOLIO_DATA = {
   profile: {
-    name: "Your Name",
-    kicker: "Security / Engineering",
-    headline: "セキュリティと開発の両面から、実務で役立つ成果を積み上げています。",
+    name: "西岡 大助 (Nishioka Daisuke) ",
+    kicker: "Security Engineer / Red Team",
+    headline: "",
     about:
-      "業務では◯◯（例：脆弱性診断/ペンテスト/セキュリティ設計）を中心に担当。再現性のある手順化・仕組み化、読み手に伝わるアウトプットを重視しています。",
-    metaLine: "Tokyo, JP / Security Engineer / Contact: your.email@example.com",
-    skills: ["Web Security", "Penetration Testing", "AWS", "Node.js", "Report Writing"]
+      "業務では脆弱性診断/ペネトレーションテストを中心に担当。実際の攻撃をリサーチし、現実的なセキュリティリスクを低減させることを重視しています。",
+    metaLine: "Tokyo, JP / Contact: konakona000429@yahoo.co.jp",
+    skills: ["Web Security", "Penetration Test", "AWS"]
   },
 
   heroLinks: [
-    { label: "GitHub", url: "https://github.com/yourname" },
+    { label: "GitHub", url: "https://github.com/konakona429" },
     { label: "X / Twitter", url: "https://x.com/yourname" },
     { label: "LinkedIn", url: "https://www.linkedin.com/in/yourname/" },
-    { label: "Blog", url: "https://your-blog.example.com" }
+    { label: "Note", url: "https://note.com/konaprime" },
+    { label: "Qiita", url: "https://qiita.com/konakona429" }
   ],
 
   experience: [
     {
-      title: "セキュリティ診断 / コンサル（会社名など）",
-      when: "2023 - Present",
+      title: "Future Secure Wave",
+      when: "2022 - Present",
       description:
-        "Webアプリ/ネットワークのセキュリティ評価、改善提案、運用支援。品質・再現性を意識した診断手順の整備も担当。",
-      tags: ["Web", "Network", "Reporting", "Process"],
+        "Webアプリ/プラットフォームのセキュリティ評価、Active Directoryの設定診断、ペネトレーションテストを担当。サービス設計から携わり、世の中のニーズに合わせて提供内容を整備。",
+      tags: ["Web Security", "AD Policy", "Penetration Test"],
       links: [
-        { label: "成果物サンプル（任意）", url: "#" }
+        { label: "", url: "#" }
       ]
-    },
-    {
-      title: "プロジェクト: ○○の内製化支援",
-      when: "2024",
-      description:
-        "診断プロセスの標準化、チェックリスト化、教育資料整備。短期間で立ち上げ可能な運用設計を支援。",
-      tags: ["Enablement", "Training", "Templates"],
-      links: []
     }
   ],
 
   talks: [
     {
-      title: "HTTP Request Smuggling / Desync の基礎と実践",
-      when: "2025",
+      title: "C2フレームワークを使った攻撃を体験してみよう！",
+      when: "2024",
       description:
-        "仕組み・典型パターン・再現方法・防御観点を整理し、実務で使える視点で解説。",
-      tags: ["Web", "HTTP", "Offense/Defense"],
+        "OSSのC2フレームワークである「Empire」を用いて、侵入後の活動や情報収集の流れを体験する。攻撃によって発生した痕跡を確認し、インシデント対応やSOCチームが把握すべきポイントを学ぶ。",
+      tags: ["AV Tokyo", "Offensive", "C2フレームワーク", "Empire"],
       links: [
         { label: "スライド", url: "#" },
-        { label: "登壇ページ", url: "#" }
+        { label: "登壇ページ", url: "https://www.avtokyo.org/avtokyo2024/events#h.os63yldvmw6y" }
+      ]
+    },
+
+    {
+      title: "ペネトレーションテスト駆動型CSIRT訓練",
+      when: "2025",
+      description:
+        "関連会社との合併によりCSIRTを再構築し、それに伴いCSIRT訓練を実施しました。Red Teamがペネトレーションテストを実施、その攻撃の状況を新開発したペネトレーション可視化ツールでリアルタイムに共有しながら、CSIRTメンバーがインシデントレスポンスを行うという、より実践的な形式を取り入れました。本発表では、訓練で明らかになったCSIRTの課題と今後の展望についてご報告します。",
+      tags: ["NCA Annual Conference", "CSIRT", "ペネトレーションテスト"],
+      links: [
+        { label: "スライド", url: "#" },
+        { label: "登壇ページ", url: "https://annualconf.nca.gr.jp/program/day1/1620_1700_r3/" }
       ]
     }
   ],
 
   certifications: [
     {
-      title: "AWS Certified Developer – Associate",
+      title: "応用情報技術者",
+      when: "2020",
+      description: "IT全体の知識を体系的に学ぶために取得",
+      tags: ["IPA"],
+      links: []
+    },
+    {
+      title: "情報処理安全確保支援士",
+      when: "2023(登録)",
+      description: "入札要件や案件の引き合い対応で必要だったため取得&登録",
+      tags: ["IPA"],
+      links: []
+    },
+    {
+      title: "AWS Certified Solution Architect – Associate",
       when: "2025",
-      description: "アプリ開発観点のAWS設計・運用知識を体系化。",
+      description: "クラウド上に構築されたシステムが多いため、知識補填のために取得",
       tags: ["AWS"],
       links: []
     },
     {
-      title: "（例）情報処理安全確保支援士 / Security+ など",
-      when: "YYYY",
-      description: "ここに補足。",
-      tags: ["Security"],
+      title: "AWS Certified Developer – Associate",
+      when: "2025",
+      description: "同上",
+      tags: ["AWS"],
       links: []
     }
   ],
@@ -73,25 +92,18 @@ window.PORTFOLIO_DATA = {
     {
       title: "技術ブログ執筆",
       when: "Ongoing",
-      description: "診断で得た知見の整理、再現手順、学習メモを公開。",
+      description: "業務や自己学習で得た知見の整理、学習メモなどを公開",
       tags: ["Writing", "Knowledge Sharing"],
-      links: [{ label: "ブログ一覧", url: "https://your-blog.example.com" }]
-    },
-    {
-      title: "コミュニティ/勉強会",
-      when: "Ongoing",
-      description: "登壇、LT、資料共有など。",
-      tags: ["Community"],
-      links: []
+      links: [{ label: "Note", url: "https://note.com/konaprime" }, { label: "Qiita", url: "https://qiita.com/konakona429" }]
     }
   ],
 
-  links: [
-    { title: "GitHub", description: "コード/検証/サンプル置き場", url: "https://github.com/yourname" },
-    { title: "X / Twitter", description: "発信・告知", url: "https://x.com/yourname" },
-    { title: "LinkedIn", description: "経歴", url: "https://www.linkedin.com/in/yourname/" },
-    { title: "Email", description: "連絡先", url: "mailto:your.email@example.com" }
-  ],
+  // links: [
+  //   { title: "GitHub", description: "コード/検証/サンプル置き場", url: "https://github.com/yourname" },
+  //   { title: "X / Twitter", description: "発信・告知", url: "https://x.com/yourname" },
+  //   { title: "LinkedIn", description: "経歴", url: "https://www.linkedin.com/in/yourname/" },
+  //   { title: "Email", description: "連絡先", url: "mailto:your.email@example.com" }
+  // ],
 
   lastUpdated: "2025-12-14"
 };

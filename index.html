@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="ポートフォリオサイト（経歴・登壇・資格・活動）" />
+  <title>Portfolio</title>
+
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <link rel="icon" href="./assets/favicon.ico" />
+</head>
+
+<body>
+  <a class="skip-link" href="#main">本文へスキップ</a>
+
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <div class="brand">
+        <span class="brand-mark" aria-hidden="true">◆</span>
+        <a class="brand-name" href="#top">Portfolio</a>
+      </div>
+
+      <nav class="nav" aria-label="サイト内ナビゲーション">
+        <a class="nav-link" href="#experience">経歴</a>
+        <a class="nav-link" href="#talks">登壇</a>
+        <a class="nav-link" href="#certs">資格</a>
+        <a class="nav-link" href="#activities">その他活動</a>
+        <a class="nav-link" href="#links">リンク</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <p class="kicker" id="kicker">Security / Engineering</p>
+          <h1 class="title" id="name">Your Name</h1>
+          <p class="subtitle" id="headline">
+            シンプルで読みやすい、活動が増えても育てられるポートフォリオ。
+          </p>
+
+          <div class="hero-actions" id="heroLinks">
+            <!-- JSでリンクを描画 -->
+          </div>
+
+          <div class="meta" id="metaLine">
+            <!-- JSで一行プロフィール -->
+          </div>
+        </div>
+
+        <div class="hero-card" aria-label="概要">
+          <h2 class="card-title">About</h2>
+          <p class="card-text" id="about">
+            ここに自己紹介を書きます（得意領域、価値提供、興味分野など）。
+          </p>
+
+          <div class="chips" id="skills">
+            <!-- JSでスキル/タグ -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="experience">
+      <div class="container">
+        <div class="section-head">
+          <h2>経歴</h2>
+          <p class="section-desc">職務・プロジェクトの要点を、短く分かりやすく。</p>
+        </div>
+        <div class="cards" id="experienceList"></div>
+      </div>
+    </section>
+
+    <section class="section" id="talks">
+      <div class="container">
+        <div class="section-head">
+          <h2>登壇</h2>
+          <p class="section-desc">タイトル・イベント・資料リンクをまとめるのがおすすめ。</p>
+        </div>
+        <div class="cards" id="talksList"></div>
+      </div>
+    </section>
+
+    <section class="section" id="certs">
+      <div class="container">
+        <div class="section-head">
+          <h2>資格</h2>
+          <p class="section-desc">取得年、認定団体、関連スキルを記載。</p>
+        </div>
+        <div class="cards" id="certsList"></div>
+      </div>
+    </section>
+
+    <section class="section" id="activities">
+      <div class="container">
+        <div class="section-head">
+          <h2>その他活動</h2>
+          <p class="section-desc">ブログ、OSS、勉強会、社内貢献などもここに。</p>
+        </div>
+        <div class="cards" id="activitiesList"></div>
+      </div>
+    </section>
+
+    <section class="section" id="links">
+      <div class="container">
+        <div class="section-head">
+          <h2>SNS / GitHub</h2>
+          <p class="section-desc">連絡先・発信先をまとめます。</p>
+        </div>
+        <div class="cards" id="linksList"></div>
+      </div>
+    </section>
+
+    <noscript>
+      <div class="container noscript">
+        JavaScriptが無効です。表示は最小限になります（`assets/js/data.js` と `assets/js/app.js` を有効化してください）。
+      </div>
+    </noscript>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="muted">
+        © <span id="year"></span> <span id="footerName">Your Name</span>
+      </p>
+      <p class="muted">
+        Last updated: <span id="lastUpdated"></span>
+      </p>
+    </div>
+  </footer>
+
+  <script src="./assets/js/data.js" defer></script>
+  <script src="./assets/js/app.js" defer></script>
+</body>
+</html>

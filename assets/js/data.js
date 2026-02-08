@@ -7,13 +7,13 @@ window.PORTFOLIO_DATA = {
     about:
       "業務では脆弱性診断/ペネトレーションテストを中心に担当。実際の攻撃をリサーチし、現実的なセキュリティリスクを低減させることを重視しています。",
     metaLine: "Tokyo, JP / Contact: konakona000429@yahoo.co.jp",
-    skills: ["Web Security", "Penetration Test", "AWS"]
+    skills: ["Web Security", "Penetration Test"]
   },
 
   heroLinks: [
     { label: "GitHub", url: "https://github.com/konakona429" },
-    { label: "X / Twitter", url: "https://x.com/yourname" },
-    { label: "LinkedIn", url: "https://www.linkedin.com/in/yourname/" },
+    { label: "X / Twitter", url: "https://x.com/mkpikumin" },
+    { label: "LinkedIn", url: "https://www.linkedin.com/in/daisuke-nishioka-71a6b53ab/" },
     { label: "Note", url: "https://note.com/konaprime" },
     { label: "Qiita", url: "https://qiita.com/konakona429" }
   ],
@@ -68,7 +68,7 @@ window.PORTFOLIO_DATA = {
     {
       title: "情報処理安全確保支援士",
       when: "2023(登録)",
-      description: "入札要件や案件の引き合い対応で必要だったため取得&登録",
+      description: "入札要件や案件の引き合い対応で必要だったため取得および登録",
       tags: ["IPA"],
       links: []
     },
